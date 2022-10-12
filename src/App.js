@@ -14,7 +14,11 @@ function App() {
 			.then((res) => res.json())
 			.then((json) => {
 				setUsers(json.data);
-		}).catch();
+		}).catch(err => {
+			console.warn(err);
+			alert('Error with getting user data');
+		});
+		
 	}, []);
 
   return (
