@@ -8,6 +8,7 @@ import './App.css';
 
 function App() {
 	const [users, setUsers] = React.useState([]);
+	const [isLoading, setLoading] = React.useState(true);
 
 	React.useEffect(() => {
 		fetch('https://reqres.in/api/users')
@@ -24,7 +25,7 @@ function App() {
   return (
 		<>
 			<div className='app'>
-				<Users items={users} />
+				<Users items={users}  isLoading={isLoading}/>
 				{/* <Success /> */}
 			</div>
 		</>
