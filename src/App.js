@@ -18,7 +18,8 @@ function App() {
 		}).catch(err => {
 			console.warn(err);
 			alert('Error with getting user data');
-		});
+		})
+		.finally(() => setLoading(false));
 		
 	}, []);
 
