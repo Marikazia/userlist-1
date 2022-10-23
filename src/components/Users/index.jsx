@@ -20,7 +20,12 @@ export const Users = ({ items, isLoading }) => {
 			) : (
 				<ul className="users-list">
 					{items.map((obj) => (
-						<User first_name={obj.first_name} last_name={obj.last_name} email={obj.email} avatar={obj.avatar} />
+						<User
+							first_name={obj.first_name}
+							last_name={obj.last_name}
+							email={obj.email}
+							avatar={obj.avatar}
+						/>
 					))}
 				</ul>
 			)}
