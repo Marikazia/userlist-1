@@ -22,10 +22,6 @@ export const Users = ({ items, isLoading }) => {
 					{items.map((obj) => (
 						<User
 							{...obj}
-						// first_name={obj.first_name}
-						// last_name={obj.last_name}
-						// email={obj.email}
-						// avatar={obj.avatar}
 						/>
 					))}
 				</ul>
