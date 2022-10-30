@@ -24,6 +24,10 @@ function App() {
 		
 	}, []);
 
+	const onChangeSearchValue = (event) => {
+		setSearchValue(event.target.value); 
+	}
+
   return (
 		<>
 			<div className='app'>
