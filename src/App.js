@@ -9,6 +9,7 @@ import { User } from './components/Users/User';
 function App() {
 	const [users, setUsers] = React.useState([]);
 	const [isLoading, setLoading] = React.useState(true);
+	const [searchValue, setSearchValue] = React.useState();
 
 	React.useEffect(() => {
 		fetch('https://reqres.in/api/users')
