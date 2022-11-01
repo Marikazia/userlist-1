@@ -26,6 +26,7 @@ export const Users = ({ items, isLoading, searchValue, onChangeSearchValue }) =>
 				<ul className="users-list">
 					{items.map((obj) => (
 						<User
+							key={obj.id}
 							{...obj}
 						/>
 					))}
