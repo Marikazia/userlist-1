@@ -1,8 +1,7 @@
 
 import React from 'react';
-import './index.scss';
+import './index.css';
 import { Users } from './components/Users';
-
 
 // Тут список пользователей: https://reqres.in/api/users
 
@@ -31,7 +30,12 @@ function App() {
   return (
 		<>
 			<div className='app'>
-				<Users searchValue={searchValue} items={users}  isLoading={isLoading}/>
+				<Users 
+					onChangeSearchValue={onChangeSearchValue} 
+					searchValue={searchValue} 
+					items={users}  
+					isLoading={isLoading}
+				/>
 				{/* <Success /> */}
 			</div>
 		</>
