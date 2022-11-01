@@ -13,7 +13,7 @@ export const Users = ({ items, isLoading, searchValue, onChangeSearchValue }) =>
 					value={searchValue}
 					onChange={onChangeSearchValue}
 					type="text"
-					placeholder="Найти пользователя..."
+					placeholder="Found user..."
 				/>
 			</div>
 			{isLoading ? (
