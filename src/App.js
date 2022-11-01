@@ -1,7 +1,7 @@
 
 import React from 'react';
-import './App.css';
-import { User } from './components/Users/User';
+import './index.scss';
+import { Users } from './components/Users';
 
 
 // Тут список пользователей: https://reqres.in/api/users
