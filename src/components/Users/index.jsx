@@ -3,6 +3,7 @@ import { Skeleton } from './Skeleton';
 import { User } from './User';
 
 export const Users = ({ items, isLoading, searchValue, onChangeSearchValue }) => {
+	console.log(searchValue);
 	return (
 		<>
 			<div className="search">
@@ -24,7 +25,15 @@ export const Users = ({ items, isLoading, searchValue, onChangeSearchValue }) =>
 				</div>
 			) : (
 				<ul className="users-list">
-					{items.map((obj) => (
+					{items.filter(obj => {
+						const fullName = obj.firs_name + obj.last_name;
+
+						if (fullName.includes(searchValue) || email.includes(searchValue)) {
+							return true;
+						}
+
+						return true;
+					}).map((obj) => (
 						<User
 							key={obj.id}
 							{...obj}
