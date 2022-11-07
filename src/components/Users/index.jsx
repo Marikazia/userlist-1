@@ -33,12 +33,13 @@ export const Users = ({ items, isLoading, searchValue, onChangeSearchValue }) =>
 						}
 
 						return true;
-					}).map((obj) => (
-						<User
-							key={obj.id}
-							{...obj}
-						/>
-					))}
+					})
+						.map((obj) => (
+							<User
+								key={obj.id}
+								{...obj}
+							/>
+						))}
 				</ul>
 			)}
 			<button className="send-invite-btn">
