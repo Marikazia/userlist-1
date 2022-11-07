@@ -28,7 +28,7 @@ export const Users = ({ items, isLoading, searchValue, onChangeSearchValue }) =>
 					{items.filter(obj => {
 						const fullName = obj.firs_name + obj.last_name;
 
-						return (fullName.includes(searchValue) || email.includes(searchValue))
+						return (fullName.includes(searchValue) || obj.email.includes(searchValue))
 					})
 						.map((obj) => (
 							<User
