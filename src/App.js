@@ -1,13 +1,14 @@
 
 import React from 'react';
 import './index.css';
-import { Success } from './components/Success'
+// import { Success } from './components/Success'
 import { Users } from './components/Users';
 
 // Тут список пользователей: https://reqres.in/api/users
 
 function App() {
 	const [users, setUsers] = React.useState([]);
+	// const [invites, setInvites] = React.useState([]);
 	const [isLoading, setLoading] = React.useState(true);
 	const [searchValue, setSearchValue] = React.useState();
 
