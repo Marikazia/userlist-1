@@ -31,9 +31,7 @@ export const Users = ({ items, isLoading, searchValue, onChangeSearchValue }) =>
 						return (fullName.includes(searchValue) || obj.email.toLowerCase().includes(searchValue.toLowerCase()))
 					})
 						.map((obj) => (
-							<User
-								key={obj.id}
-								{...obj}
+							<User isInvited key={obj.id} {...obj}
 							/>
 						))}
 				</ul>
