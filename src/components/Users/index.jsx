@@ -31,7 +31,7 @@ export const Users = ({ items, isLoading, searchValue, onChangeSearchValue, invi
 						return (fullName.includes(searchValue) || obj.email.toLowerCase().includes(searchValue.toLowerCase()))
 					})
 						.map((obj) => (
-							<User isInvited={invites.includes(obj.id)} key={obj.id} {...obj}
+							<User onClickInvite={onClickInvite} isInvited={invites.includes(obj.id)} key={obj.id} {...obj}
 							/>
 						))}
 				</ul>
