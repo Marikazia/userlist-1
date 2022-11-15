@@ -36,7 +36,7 @@ export const Users = ({ items, isLoading, searchValue, onChangeSearchValue, invi
 						))}
 				</ul>
 			)}
-			<button className="send-invite-btn">
+			<button onClick={onClickSendInvites} className="send-invite-btn">
 				Send invite
 			</button>
 		</>
