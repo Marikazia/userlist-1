@@ -38,6 +38,10 @@ function App() {
 		}
 	}
 
+	const onClickSendInvites = () => {
+		setSuccess(true);
+	}
+
   return (
 		<>
 			<div className='app'>
@@ -51,6 +55,7 @@ function App() {
 						isLoading={isLoading}
 						invites={invites}
 						onClickInvite={onClickInvite}
+						onClickSendInvites={onClickSendInvites}
 					/>
 				)}
 			</div>
