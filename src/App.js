@@ -46,7 +46,7 @@ function App() {
 		<>
 			<div className='app'>
 				{success ? (
-					<Success />
+					<Success count={invites.length}/>
 				) : (
 					<Users 
 						onChangeSearchValue={onChangeSearchValue} 
