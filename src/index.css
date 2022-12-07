@@ -1,4 +1,59 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul, li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, ul, li, input, button {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, 'Nunito', sans-serif, 'Quattrocento Sans', sans-serif;
@@ -15,6 +70,12 @@ body {
   width: 500px;
   margin: auto;
   text-align: center;
+}
+
+.app .search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .app h1 {
@@ -37,6 +98,11 @@ body {
   font-size: 2rem;
   margin: 0;
   color: #556581;
+}
+
+.app h3 {
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .app button {
@@ -74,6 +140,13 @@ body {
   box-shadow: none;
 }
 
+.app p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
 .action-icon, .search-icon, .mail-icon {
   height: 20px;
   width: 20px;
@@ -82,10 +155,51 @@ body {
   justify-content: center;
 }
 
+.action-icon {
+  margin-right: 0;
+}
+
+.search-icon {
+  height: 15px;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.mail-icon {
+  height: 15px;
+  width: 15px;
+  margin-right: 5px;
+}
+
 .list-element {
   display: flex;
 }
 
 .row-element {
   display: flex;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.contact-part {
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
 }
