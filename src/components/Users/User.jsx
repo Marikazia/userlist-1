@@ -4,7 +4,7 @@ export const User = ({ id, email, first_name, last_name, avatar, onClickInvite, 
 	<li className="list-element">
 		<div className="row-element">
 			<img className="avatar" src={avatar} alt="User" />
-			<div>
+			<div className="contact-part">
 				<h3>{first_name} {last_name}</h3>
 				<p>
 					<svg className="mail-icon" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg">
@@ -13,6 +13,7 @@ export const User = ({ id, email, first_name, last_name, avatar, onClickInvite, 
 					{email}
 				</p>
 			</div>
+
 		</div>
 		<img onClick={() => onClickInvite(id)} className="action-icon" src={`./assets/${isInvited ? 'minus' : 'plus'}.svg`} alt="Action" />
 	</li>
